@@ -1,0 +1,6 @@
+Creating new django models (tables). In order to use it in code, change the ownership of the table to the -U postgres. 
+Go to the postgres server and execute query: 
+"ALTER TABLE table_name public."table_name" OWNER to postgres;
+"GRANT ALL PRIVILEGES ON django_trader TO postgres"
+
+1. IMPORTANT!!! if there are any caps or spaces, the table MUST be enclosed in double quotes!!!!

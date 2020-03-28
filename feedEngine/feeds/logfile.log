@@ -1,0 +1,9 @@
+2019-12-28 04:42:32,257 : WARNING : helpers : (Yahoo Finance feed) Stock symbol (SPY) does not exist
+2019-12-28 04:43:04,022 : WARNING : helpers : (Yahoo Finance feed) Stock symbol (SPY) does not exist
+2019-12-28 04:43:52,372 : WARNING : helpers : (Yahoo Finance feed) Stock symbol (SPY) does not exist
+2019-12-28 04:47:25,336 : ERROR : helpers : (Yahoo Finance feed) Internet connection failed. Exiting...
+2019-12-28 04:47:50,631 : ERROR : helpers : (Yahoo Finance feed) Internet connection failed. Exiting...
+2019-12-28 04:49:37,138 : ERROR : helpers : (Yahoo Finance feed) Internet connection failed. Exiting...
+2019-12-28 04:55:09,352 : WARNING : helpers : (Yahoo Finance feed) Stock symbol (SPY) does not exist
+2019-12-28 05:15:40,715 : INFO : helpers : (Nasdaq Trader fetch) symbols processed: 3515. symbols added: 4
+2019-12-28 05:15:41,631 : INFO : helpers : (Nasdaq Trader fetch) symbols processed: 5393. symbols added: 5
