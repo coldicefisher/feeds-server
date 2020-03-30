@@ -22,3 +22,5 @@ os.environ['DB_HOST'] = 'localhost'
 # os.environ['REDIS_HOST'] = ''
 # os.environ['REDIS_PORT'] = ''
 # os.environ['REDIS_PASS'] = ''
+
+#Test 1
