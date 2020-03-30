@@ -2,6 +2,8 @@ from datetime import datetime
 import logging, urllib3
 import psycopg2, os
 import redis
+from feedEngine import config
+
 def convert_date_to_mysql(date):
     formatted_date = date.strftime('%Y-%m-%d %H:%M:%S')
     return formatted_date
@@ -26,7 +28,6 @@ def postgres_conn(auto_commit = False):
     """ Connect to the PostgreSQL database server """
     conn = None
     try:
-        os.environ['DB_HOST'] = 'localhost'
         # connect to the PostgreSQL server
         #print('Connecting to the PostgreSQL database...')
         conn = psycopg2.connect(
@@ -37,20 +38,6 @@ def postgres_conn(auto_commit = False):
             port=os.environ.get('DB_PORT')
         )
         
-        #conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
-        # create a cursor
-        #cur = conn.cursor()
-        
-        # execute a statement
-        #print('PostgreSQL database version:')
-        #cur.execute('SELECT version()')
- 
-        # display the PostgreSQL database server version
-        #db_version = cur.fetchone()
-        #print(db_version)
-       
-       # close the communication with the PostgreSQL
-        #cur.close()
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
     

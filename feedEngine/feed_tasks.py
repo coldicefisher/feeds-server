@@ -154,7 +154,7 @@ def start_flower():
 
 def backup_db():
     today = dt.datetime.today().date()
-    subprocess.Popen(f'nohup pg_dump -U postgres -Ft django_trader > {today}.tar',shell=True,cwd='/var/lib/postgresql')
+    subprocess.Popen(f'nohup pg_dump -U postgres -Ft django_trader > {today}.tar',shell=True,cwd='/var/www/myproject/db_backups')
     return f'backup successful to file: {today}'
 #TEST CODE
 
